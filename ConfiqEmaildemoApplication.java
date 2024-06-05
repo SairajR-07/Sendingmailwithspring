@@ -16,7 +16,9 @@ private EmailSenderService senderService;
 	}
 	@EventListener(ApplicationReadyEvent.class)
 	public void sendMail() {
-		senderService.sendEmail("pranjalhande08@gmail.com","What u say!!","This is not a white labelError batch or I'm not a white label error student.Did you understand.You better Understand");
+		senderService.sendEmail("Email Address",
+					"This is Subject",
+					"This is message");
 	}
 
 }
