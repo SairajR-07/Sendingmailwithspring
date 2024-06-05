@@ -19,7 +19,7 @@ public class EmailSenderService {
 
     public void sendEmail(String toEmail,String subject, String body) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("2305112070040@paruluniversity.ac.in");
+        message.setFrom(" Enter Sender email address");
         message.setTo(toEmail);
         message.setText(body);
         message.setSubject(subject);
